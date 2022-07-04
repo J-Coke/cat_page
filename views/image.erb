@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=yes, width=device-width" />
+ 
+<title>Cool Cats</title>
+</head>
+  <h1> The Best Cats <h1>
+ <body style="background-color: #7f7f7f">
+<body>
+  <% @pictures.each do |picture| %>
+    <img src="<%= picture.sub!(/public\//, '') %>" />
+  <% end %>
+
+</body>
+</html>
